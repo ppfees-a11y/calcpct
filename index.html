@@ -1,8 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"><title>Percentage Calculator Hub – Free Percentage Calculators</title>
-<meta name="description" content="Free percentage calculators for percent of a number, percent change, increase, decrease, discounts, markup, tips and more.">
-<link rel="canonical" href="https://percentagecalculatorhub.com/">
-<!-- Paste your AdSense code immediately below this line after Google gives it to you. -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5287196493103465"
-     crossorigin="anonymous"></script></head><body><header><div class="wrap topbar"><a class="brand" href="index.html">Percentage Calculator Hub</a><nav><a href="index.html">Calculators</a><a href="about.html">About</a><a href="privacy.html">Privacy</a></nav></div></header><main><section class="hero wrap"><h1>Percentage Calculator Hub</h1><p>Fast, free percentage calculators for everyday math, shopping, business, bills, discounts and more.</p></section>
-<div class="wrap"><div class="ad-slot">Advertisement space — activates after AdSense approval</div></div><section class="wrap"><div class="grid"><article class="tool-card"><h3>What Is X% of Y?</h3><p>Find a percentage of any number.</p><a href="percentage-of.html">Open calculator →</a></article><article class="tool-card"><h3>X Is What Percent of Y?</h3><p>Find what percentage one number is of another.</p><a href="what-percent.html">Open calculator →</a></article><article class="tool-card"><h3>Percent Change Calculator</h3><p>Calculate the percentage change between two values.</p><a href="percent-change.html">Open calculator →</a></article><article class="tool-card"><h3>Percent Increase Calculator</h3><p>Measure how much a value increased.</p><a href="percent-increase.html">Open calculator →</a></article><article class="tool-card"><h3>Percent Decrease Calculator</h3><p>Measure how much a value decreased.</p><a href="percent-decrease.html">Open calculator →</a></article><article class="tool-card"><h3>Percentage Difference Calculator</h3><p>Compare two values using percentage difference.</p><a href="percentage-difference.html">Open calculator →</a></article><article class="tool-card"><h3>Discount Calculator</h3><p>Find sale price and savings from a discount.</p><a href="discount.html">Open calculator →</a></article><article class="tool-card"><h3>Markup Calculator</h3><p>Calculate selling price from cost and markup.</p><a href="markup.html">Open calculator →</a></article><article class="tool-card"><h3>Tip Calculator</h3><p>Calculate a tip and total bill.</p><a href="tip.html">Open calculator →</a></article><article class="tool-card"><h3>Reverse Percentage Calculator</h3><p>Find the original amount before a percentage change.</p><a href="reverse-percentage.html">Open calculator →</a></article></div></section>
-<section class="wrap card"><h2>How to use Percentage Calculator Hub</h2><p>Choose the calculator that matches your question, enter your numbers, and get the result instantly.</p></section></main><footer><div class="wrap"><p><strong>Percentage Calculator Hub</strong></p><p><a href="index.html">Calculators</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></p><p class="note">© 2026 Percentage Calculator Hub. All rights reserved.</p></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Percentage Calculator | CalcPct</title>
+<meta name="description" content="Free percentage calculator for percent of a number, what percent one number is of another, percentage increase or decrease, and finding the original amount.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap top">
+<a class="brand" href="index.html">CalcPct</a>
+<nav><a href="#calculators">Calculators</a><a href="#guide">Guide</a><a href="#examples">Examples</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="hero">
+<p class="eyebrow">FREE PERCENTAGE TOOLS</p>
+<h1>Percentage Calculator</h1>
+<p class="lead">Solve the most common percentage problems in seconds: find a percentage of a number, determine what percent one number is of another, calculate percentage change, or work backward to an original amount.</p>
+</section>
+
+<section id="calculators" class="calcgrid">
+<article class="card">
+<h2>What is X% of Y?</h2>
+<div class="row"><label>Percentage<input id="p1" type="number" step="any" value="20"></label><label>Number<input id="n1" type="number" step="any" value="150"></label></div>
+<button onclick="calcOf()">Calculate</button><div class="result"><span>Result</span><strong id="r1">30</strong></div>
+<p class="formula">Formula: (percentage ÷ 100) × number</p>
+</article>
+
+<article class="card">
+<h2>X is what percent of Y?</h2>
+<div class="row"><label>First number<input id="x2" type="number" step="any" value="30"></label><label>Second number<input id="y2" type="number" step="any" value="150"></label></div>
+<button onclick="calcWhatPct()">Calculate</button><div class="result"><span>Percentage</span><strong id="r2">20%</strong></div>
+<p class="formula">Formula: (first number ÷ second number) × 100</p>
+</article>
+
+<article class="card">
+<h2>Percentage Increase or Decrease</h2>
+<div class="row"><label>Original value<input id="old3" type="number" step="any" value="80"></label><label>New value<input id="new3" type="number" step="any" value="100"></label></div>
+<button onclick="calcChange()">Calculate</button><div class="result"><span>Percentage change</span><strong id="r3">25% increase</strong></div>
+<p class="formula">Formula: ((new − original) ÷ |original|) × 100</p>
+</article>
+
+<article class="card">
+<h2>Find the Original Amount</h2>
+<p>If a final amount is X% more or less than the original, calculate the starting value.</p>
+<label>Final amount<input id="final4" type="number" step="any" value="120"></label>
+<div class="row"><label>Percentage change<input id="pct4" type="number" min="0" step="any" value="20"></label><label>Change type<select id="type4"><option value="increase">Increase</option><option value="decrease">Decrease</option></select></label></div>
+<button onclick="calcOriginal()">Calculate</button><div class="result"><span>Original amount</span><strong id="r4">100</strong></div>
+</article>
+</section>
+
+<section class="content" id="guide">
+<h2>How Percentages Work</h2>
+<p>A percentage expresses a quantity as a fraction of 100. The word “percent” literally means “per hundred.” For example, 25% represents 25 out of every 100, which is the same as 0.25 or one quarter.</p>
+<h3>Finding a Percentage of a Number</h3>
+<p>Convert the percentage to a decimal by dividing by 100, then multiply by the number. For example, 15% of 200 is 0.15 × 200 = 30.</p>
+<h3>Finding What Percent One Number Is of Another</h3>
+<p>Divide the first number by the second and multiply by 100. If 45 out of 180 items meet a condition, 45 ÷ 180 × 100 = 25%.</p>
+<h3>Calculating Percentage Change</h3>
+<p>Subtract the original value from the new value, divide that difference by the absolute value of the original, then multiply by 100. A positive result represents an increase and a negative result represents a decrease. Percentage change is undefined when the original value is zero.</p>
+<h3>Working Backward from a Percentage Change</h3>
+<p>If a $120 price is 20% higher than its original price, divide $120 by 1.20 to get $100. If a value is 20% lower than the original, divide the final value by 0.80 instead.</p>
+</section>
+
+<section class="content" id="examples">
+<h2>Everyday Percentage Examples</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Situation</th><th>Calculation</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>20% of $75</td><td>0.20 × 75</td><td>$15</td></tr>
+<tr><td>$30 is what percent of $120?</td><td>30 ÷ 120 × 100</td><td>25%</td></tr>
+<tr><td>Price rises from $50 to $60</td><td>(60 − 50) ÷ 50 × 100</td><td>20% increase</td></tr>
+<tr><td>$80 after a 20% discount: original?</td><td>80 ÷ 0.80</td><td>$100</td></tr>
+</tbody></table></div>
+<h3>Percentage Points vs. Percent Change</h3>
+<p>These terms are different. If a rate rises from 10% to 12%, it increased by 2 percentage points. Relative to the original 10% rate, however, the increase is 20%.</p>
+<h3>Percentages Above 100%</h3>
+<p>Percentages can exceed 100%. For example, 150% of 40 equals 60. A 100% increase means the original amount has doubled; a 200% increase means it has tripled.</p>
+</section>
+
+<section class="content" id="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>How do I calculate 10% quickly?</h3><p>Move the decimal point one place to the left. Ten percent of 250 is 25.</p>
+<h3>How do I calculate a discount?</h3><p>Multiply the original price by the discount percentage to find the discount amount, then subtract it from the original price.</p>
+<h3>How do I add a percentage to a number?</h3><p>Multiply the original number by 1 plus the percentage written as a decimal. To add 8%, multiply by 1.08.</p>
+<h3>How do I subtract a percentage from a number?</h3><p>Multiply the original number by 1 minus the percentage written as a decimal. To reduce a number by 15%, multiply it by 0.85.</p>
+<h3>Why can’t percentage change use zero as the original value?</h3><p>The standard percentage-change formula divides by the original value. Division by zero is undefined, so a conventional percentage change cannot be calculated from an original value of zero.</p>
+<h3>Are the calculator results rounded?</h3><p>CalcPct displays practical rounded results while calculations use JavaScript numeric precision. For financial, tax, legal, or other consequential decisions, verify the required rounding rules for your situation.</p>
+</section>
+
+<section class="content">
+<h2>About CalcPct</h2>
+<p>CalcPct is a free educational utility for common percentage calculations. The goal is to show both the answer and the underlying method so users can understand how each result is produced.</p>
+</section>
+</main>
+
+<footer><div class="wrap">
+<p>Free educational calculator. Verify results when exact precision or specialized rules matter.</p>
+<p class="creator">Created by James Gore</p>
+<p><a href="index.html">Calculator</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+<p>© <span id="year"></span> CalcPct</p>
+</div></footer>
+<script src="script.js"></script>
+</body></html>

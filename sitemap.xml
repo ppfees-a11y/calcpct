@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/sitemap/0.9">
-  <url><loc>https://percentagecalculatorhub.com/</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/percentage-of.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/what-percent.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/percent-change.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/percent-increase.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/percent-decrease.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/percentage-difference.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/discount.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/markup.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/tip.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/reverse-percentage.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/about.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/privacy.html</loc></url>
-  <url><loc>https://percentagecalculatorhub.com/terms.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://calcpct.com/</loc><priority>1.0</priority></url>
+<url><loc>https://calcpct.com/privacy.html</loc><priority>0.3</priority></url>
+<url><loc>https://calcpct.com/terms.html</loc><priority>0.3</priority></url>
 </urlset>
