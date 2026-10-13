@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://calcpct.com/</loc><priority>1.0</priority></url>
-<url><loc>https://calcpct.com/privacy.html</loc><priority>0.3</priority></url>
-<url><loc>https://calcpct.com/terms.html</loc><priority>0.3</priority></url>
+<url><loc>https://calcpct.com/index.html</loc></url>
+<url><loc>https://calcpct.com/guide.html</loc></url>
+<url><loc>https://calcpct.com/examples.html</loc></url>
+<url><loc>https://calcpct.com/faq.html</loc></url>
+<url><loc>https://calcpct.com/methodology.html</loc></url>
+<url><loc>https://calcpct.com/about.html</loc></url>
+<url><loc>https://calcpct.com/privacy.html</loc></url>
+<url><loc>https://calcpct.com/terms.html</loc></url>
 </urlset>
